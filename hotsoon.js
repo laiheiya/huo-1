@@ -197,7 +197,7 @@ if (!hotsoonsignheaderArr[0]) {
     $.msg($.name, '【提示】请先获取火山视频极速版一cookie')
     return;
   }
-
+for (var i = 0; i <10; i++) {
 if (2>1) {
   while(ture){
    console.log(`------------- 共${hotsoonsignheaderArr.length}个账号----------------\n`)
@@ -220,7 +220,7 @@ if (2>1) {
       //await skill()
       await watch_video(no)
       await showmsg()
-   }
+    }
  }
       console.log(`========================本次任务执行完毕，休息1分钟==============================\n`);
       await $.wait(120000)
