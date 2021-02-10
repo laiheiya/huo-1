@@ -199,7 +199,7 @@ if (!hotsoonsignheaderArr[0]) {
   }
 
 if (2>1) {
-  while(true){
+  while(i < 10 ){
    console.log(`------------- 共${hotsoonsignheaderArr.length}个账号----------------\n`)
   for (let i = 0; i < hotsoonsignheaderArr.length; i++) {
     if (hotsoonsignheaderArr[i]) {
