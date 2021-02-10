@@ -212,7 +212,7 @@ if (2>1) {
       $.index = i + 1;
       console.log(`\n开始【火山视频极速版${$.index}】`)
       }
-     for (let i = 0; i < 5; i++) {
+     for (let j = 0; j < 5; j++) {
       //await userinfo()
       await sign_in()
       await treasure_task()
@@ -221,6 +221,7 @@ if (2>1) {
       //await skill()
       await watch_video(no)
       await showmsg()
+      console.log(`\n  请等待1分钟后继续视频${$.index}第${j+1}次任务`)
     }
  }
       console.log(`========================本次任务执行完毕，休息1分钟==============================\n`);
