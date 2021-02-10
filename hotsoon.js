@@ -197,7 +197,6 @@ if (!hotsoonsignheaderArr[0]) {
     $.msg($.name, '【提示】请先获取火山视频极速版一cookie')
     return;
   }
-//for (var i = 0; i <10; i++) {
 if (2>1) {
   while(true){
    console.log(`------------- 共${hotsoonsignheaderArr.length}个账号----------------\n`)
@@ -213,7 +212,7 @@ if (2>1) {
       $.index = i + 1;
       console.log(`\n开始【火山视频极速版${$.index}】`)
       }
-      for (let i = 0; i < 5; i++) {
+     for (let i = 0; i < 5; i++) {
       //await userinfo()
       await sign_in()
       await treasure_task()
@@ -226,7 +225,7 @@ if (2>1) {
  }
       console.log(`========================本次任务执行完毕，休息1分钟==============================\n`);
       await $.wait(120000)
-
+  }
     }
   }else{
  console.log(`------------- 共${hotsoonsignheaderArr.length}个账号----------------\n`)
