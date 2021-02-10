@@ -199,9 +199,9 @@ if (!hotsoonsignheaderArr[0]) {
   }
 //for (var i = 0; i <10; i++) {
 if (2>1) {
-  while(ture){
+  while(true){
    console.log(`------------- 共${hotsoonsignheaderArr.length}个账号----------------\n`)
-  for (var i = 0; i < 10; i++) {
+  for (var i = 0; i < hotsoonsignheaderArr.length; i++) {
     if (hotsoonsignheaderArr[i]) {
       message = ''
       hotsoonsignheader = hotsoonsignheaderArr[i];
@@ -212,6 +212,8 @@ if (2>1) {
       hotsoonreadkey = hotsoonreadkeyArr[i];
       $.index = i + 1;
       console.log(`\n开始【火山视频极速版${$.index}】`)
+      }
+      for (let i = 0; i < 5; i++) {
       //await userinfo()
       await sign_in()
       await treasure_task()
