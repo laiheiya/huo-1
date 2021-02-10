@@ -212,7 +212,6 @@ if (2>1) {
       $.index = i + 1;
       console.log(`\n开始【火山视频极速版${$.index}】`)
       }
-     for (let j = 0; j < 5; j++) {
       //await userinfo()
       await sign_in()
       await treasure_task()
@@ -226,7 +225,7 @@ if (2>1) {
  }
       console.log(`========================本次任务执行完毕，休息1分钟==============================\n`);
       await $.wait(120000)
-  }
+  
     }
   }else{
  console.log(`------------- 共${hotsoonsignheaderArr.length}个账号----------------\n`)
@@ -359,7 +358,7 @@ return new Promise((resolve, reject) => {
   })
  } 
 //tasklist
-/*function tasklist() {
+function tasklist() {
 return new Promise((resolve, reject) => {
   let tasklisturl ={
     url: `https://i.snssdk.com/luckycat/hotsoon/v1/task/page?&polaris_${hotsoonsignheader}`,
@@ -382,7 +381,7 @@ return new Promise((resolve, reject) => {
     })
    })
   } 
-*/
+
 //tasklist
 function tasklist() {
 return new Promise((resolve, reject) => {
